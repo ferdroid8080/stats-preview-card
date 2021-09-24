@@ -7,7 +7,7 @@
 	--slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
 	--slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
 	/* Typography */
-	--font-size-base: 1.5rem;
+	--font-size-base: 15px;
 	--font-inter: 'Inter', sans-serif;
 	--font-lexend-deco: 'Lexend Deco', sans-serif;
 	--font-regular: 400;
@@ -18,5 +18,84 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-size: 62.5%;
+}
+
+body {
+	background-color: var(--very-dark-blue);
+	font-size: var(--font-size-base);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.highlight-text {
+	color: var(--soft-violet);
+}
+
+.card--container {
+	background-color: var(--dark-desaturated-blue);
+	padding: 35px 25px;
+	margin: 0 25px;
+	border-radius: 10px;
+}
+
+.card--content--header {
+	margin: 0 1rem;
+}
+
+.card--content--header h2 {
+	font-family: var(--font-lexend-deco);
+	font-weight: var(--font-bold);
+	color: var(--white);
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.card--content--inner {
+	margin: 1.5rem .5rem;
+}
+
+.card--content--inner p {
+	text-align: center;
+	font-family: var(--font-inter);
+	font-weight: var(--font-regular);
+	line-height: 1.5rem;
+	color: var(--slightly-transparent-white)
+}
+
+.card--content--stats {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2.8rem;
+}
+
+.card--content--stats ul {
+	list-style-type: none;
+}
+
+.card--content--stats ul li {
+	margin-bottom: 1.3rem;
+	text-align: center;
+	font-family: var(--font-inter);
+	line-height: 1.7rem;
+}
+
+.card--content--stats ul li:last-child {
+	margin-bottom: 0;
+}
+
+.card--content--stats ul li h3 {
+	font-weight: var(--font-bold);
+	color: var(--white);
+	font-size: 1.5rem;
+}
+
+.card--content--stats ul li p {
+	font-weight: var(--font-regular);
+	font-size: .6rem;
+	color: var(--slightly-transparent-white-2);
+	text-transform: uppercase;
+	letter-spacing: .2rem;
 }

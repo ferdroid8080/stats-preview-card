@@ -121,3 +121,62 @@ body {
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 }
+
+
+@media screen and (min-width: 1440px) {
+	.card--container {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.card--content--wrapper {
+		margin: 40px 50px 0;
+		padding: 34px 25px 0;
+	}
+	
+	.card--image {
+		height: auto;
+		background-image: url('./images/image-header-desktop.jpg');
+		border-radius: 0 10px 10px 0;
+	}
+	.card--image--color-mask {
+		border-radius: 0 10px 10px 0;
+	}
+
+	.card--content--header {
+		margin: 0 20px 0 0;
+	}
+
+	.card--content--header h2 {
+		font-size: 2rem;
+		text-align: left;
+	}
+
+	.card--content--inner {
+		margin-left: 0;
+		margin-right: 0;
+		width: 90%;
+	}
+
+
+
+	.card--content--paragraph p {
+		text-align: left;
+	}
+
+	.card--content--stats {
+		width: 91%;
+		margin-top: 4.8rem;
+	}
+
+	.card--content--stats ul {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.card--content--stats ul li {
+		text-align: left;
+	}
+
+}
